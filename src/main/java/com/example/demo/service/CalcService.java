@@ -18,7 +18,7 @@ public class CalcService {
      */
     public int execute(int value1, int value2, String operator) {
         switch (operator) {
-            case "+":
+              case "+":
                 return value1 + value2;
             case "-":
                 return value1 - value2;
@@ -30,6 +30,8 @@ public class CalcService {
                 }
                 return value1 / value2;
             default:
+
+            
                 throw new IllegalArgumentException("不正な演算子: " + operator);
         }
     }
